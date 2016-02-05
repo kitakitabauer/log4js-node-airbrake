@@ -1,0 +1,9 @@
+.*.swp
+._*
+.DS_Store
+.git*
+.npmrc
+.svn
+test/
+Makefile
+npm-debug.log

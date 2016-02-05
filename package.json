@@ -1,0 +1,27 @@
+{
+  "name": "log4js-node-airbrake",
+  "version": "0.0.1",
+  "description": "An appender for log4js-node which sends errors to Airbrake",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "logging",
+    "log4js",
+    "appender",
+    "airbrake"
+  ],
+  "dependencies": {
+    "airbrake": "~0.3.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kitakitabauer/log4js-node-airbrake.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kitakitabauer/log4js-node-airbrake/issues"
+  },
+  "author": "kitahara-yuki",
+  "license": "MIT"
+}
