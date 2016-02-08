@@ -10,7 +10,7 @@
  * }
  */
 function appender(config) {
-  var client = require('airbrake').createClient(config.key, 'product');
+  var client = require('airbrake').createClient(config.key, config.mode || 'product');
 
   return function(log) {
     if (log.level.isLessThan(config.level || 'ERROR')) {
