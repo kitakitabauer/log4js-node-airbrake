@@ -17,13 +17,17 @@ function appender(config) {
       return;
     }
 
-    client.notify({
-      type: config.level || 'ERROR',
-      message: log.data[0],
-      stack: log.data[0]
-    }, function(err, url) {
-      err && console.error(err, url);
-    });
+    try {
+      client.notify({
+        type: config.level || 'ERROR',
+        message: log.data[0],
+        stack: log.data[0]
+      }, function(err, url) {
+        err && console.error(err, url);
+      });
+    } catch (e) {
+      console.error(e);
+    }
   }
 }
 
