@@ -1,6 +1,6 @@
 {
   "name": "log4js-node-airbrake",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An appender for log4js-node which sends errors to Airbrake",
   "main": "index.js",
   "scripts": {
