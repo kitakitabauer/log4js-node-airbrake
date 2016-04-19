@@ -19,7 +19,7 @@ log4js.configure({
     {
       category: 'basic',
       type: 'log4js-node-airbrake',
-      level: 'notification-level',
+      level: 'not-notification-level',
       key: 'your-project-token',
     }
   ]
