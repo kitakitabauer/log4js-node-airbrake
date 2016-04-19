@@ -5,7 +5,7 @@
  *
  * @param config {object}
  * {
- *   level: 'notification-level', // default ERROR
+ *   level: 'not-notification-level', // default WARN
  *   key: 'project-token',
  * }
  */
@@ -13,7 +13,7 @@ function appender(config) {
   var client = require('airbrake').createClient(config.key, config.mode || 'product');
 
   return function(log) {
-    if (log.level.isLessThan(config.level || 'ERROR')) {
+    if (log.level.isLessThanOrEqualTo(config.level || 'WARN')) {
       return;
     }
 
