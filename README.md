@@ -1,4 +1,6 @@
 # log4js-node-airbrake
+[![npm version](https://badge.fury.io/js/log4js-node-airbrake@2x.png)](https://badge.fury.io/js/log4js-node-airbrake)
+
 ## log4js Airbrake Reporter
 
 ### Installing
